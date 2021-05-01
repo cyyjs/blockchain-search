@@ -35,3 +35,9 @@ yarn build
 ```sh
 yarn start
 ```
+
+## 部署到ABT Node
+
+```sh
+yarn deploy
+```
