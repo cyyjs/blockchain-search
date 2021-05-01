@@ -1,0 +1,39 @@
+{
+  "name": "blockchain-search",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build && blocklet bundle",
+    "test": "node tests",
+    "test:e2e": "cypress run --headless",
+    "dev": "NODE_ENV=development node api/app.js & NODE_ENV=development vite",
+    "start": "node api/app.js",
+    "deploy": "blocklet deploy .blocklet/bundle"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "cyyjs@cyyjs.top",
+    "name": "cyyjs"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.15",
+    "apollo-boost": "^0.4.9",
+    "apollo-server-express": "^2.24.0",
+    "dayjs": "^1.10.4",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
+    "nedb-promises": "^4.1.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "consolidate": "^0.16.0",
+    "cross-spawn": "^7.0.3",
+    "sass": "^1.32.11",
+    "vite": "^2.1.5"
+  }
+}

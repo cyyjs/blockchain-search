@@ -1,0 +1,46 @@
+name: blockchain-search
+description: blockchain search
+group: dapp
+main: ./api/app.js
+author:
+  name: cyy
+scripts:
+  dev: npm run start
+  pre-deploy: node scripts/pre-deploy.js
+specVersion: 1.1.0
+files:
+  - blocklet.md
+  - screenshots
+  - dist
+  - scripts
+keywords:
+  - dapp
+  - express
+  - vue
+  - graphql
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+did: z8iZkBfWBXPFPs8YEz2n7wYyLabdpAQPnNuPn
+version: 1.0.0
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+charging:
+  price: 0
+  tokens: []
+  shares: []
+timeout:
+  start: 60
+requirements:
+  abtnode: '>=1.2.0'
+  os: '*'
+  cpu: '*'
+environments: []
+screenshots: []
+children: []
